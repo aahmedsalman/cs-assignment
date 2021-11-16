@@ -1,0 +1,34 @@
+        Declare fword : String
+        Declare sword : String
+        Declare str1 : String
+        Declare str2 : String
+        Declare str3 : String
+        Declare str4 : String
+        Declare space : Character
+        fword <-- ""
+        sword <-- ""
+        space <-- ''
+        str1 <-- ""
+        str3 <-- ""
+        str4 <-- ""
+
+
+        INPUT("Input first word ", fword)
+       
+
+        INPUT("Input second word: " , sword)
+       
+        str1 <-- Left(sword, 2) & Mid(fword, 3, Len(fword) - 2)
+        str3 <-- Left(fword, 2)
+        str4 <-- Mid(sword, 3, Len(sword) - 2)
+
+
+        str2 <-- ""
+
+
+        str2 <-- (str3 , str4)
+        OUTPUT(str1 , space , str2)
+
+
+
+  

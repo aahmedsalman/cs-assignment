@@ -1,0 +1,22 @@
+
+        Declare str2 : String 
+        Declare str1 : String 
+        Declare str4 : String 
+        Declare str3 : String
+
+str1<--""
+str2<--""
+str3<--""
+str4<--""
+
+        INPUT("Enter string: ",str1)
+
+            str2 <-- Left(str1, 2)
+            str3 <-- Right(str1, 2)
+
+        If LENGTH(str1) <= 2 Then
+            OUTPUT("Both Ends: ")
+       
+        Else
+            OUTPUT ("Both Ends:" , str2 , str3)
+        End If

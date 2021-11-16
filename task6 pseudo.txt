@@ -1,0 +1,12 @@
+Declare donutcount : Integer 
+donutcount<-- 0
+
+
+        INPUT("Enter the Number of donuts: ", donutcount)
+     
+        If donutcount <= 9 Then
+            OUTPUT("Number of donuts: " , donutcount)
+            
+        Else
+            OUTPUT("Number of donuts: Many")
+       

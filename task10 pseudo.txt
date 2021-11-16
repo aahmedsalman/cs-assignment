@@ -1,0 +1,30 @@
+        Declare str1 As String 
+        Declare count As Integer
+        Declare ing As String 
+        Declare ly As String 
+        Declare ingly As String 
+        Declare pos As String 
+str1<--""
+count<--0
+ing<--""
+ingly<--""
+
+        INPUT("Enter string: " , str1)
+        
+
+
+        If Length(str1) <= 3 Then
+            ing <-- "ing"
+            ingly <-- ""
+        End If
+        If Right(str1, 3) = "ing" Then
+            ing<--  ""
+            ingly <-- "ly"
+
+        End If
+        If Length(str1) < 3 Then
+            ing <-- ""
+            ingly <--""
+
+        End If
+        OUTPUT("Output: " , str1 , ing , ingly)

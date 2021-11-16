@@ -1,0 +1,46 @@
+        Declare str1 : String 
+        Declare char1 : Char 
+        Declare char2 : Char 
+        Declare spos : String 
+        Declare count : Integer 
+        Declare hchar : Char 
+        Declare count2 : Integer
+        Declare nchar : Integer 
+        Declare hnum : Integer
+
+ str1<--""
+char1<--''
+char2<--''
+count<--0
+count2<--0
+nchar<--0
+hchar<--''
+hnum<--0
+
+        INPUT("Input a string: ",str1)
+        
+        For count <-- 1 To LENGTH(str1)
+            nchar <-- 0
+            char1 <-- Mid(str1, count, 1)
+
+            For count2 <--1 To LENGTH(str1)
+
+                char2 <-- Mid(str1, count2, 1)
+                If char1 = char2 Then
+                    nchar <--nchar + 1
+                End If
+                If nchar > hnum Then
+                    hnum <-- nchar
+                    hchar <-- char2
+
+
+
+                End If
+            Next
+
+
+        Next
+
+        OUTPUT("most repeated character is: " , hchar)
+   
+        OUTPUT("Repeated times: " , nchar)

@@ -1,0 +1,26 @@
+        Declare str1 : String 
+        Declare thischar : Char
+        Declare vowelno : Integer 
+        Declare count : Integer 
+
+        str1<--""
+        thischar<--''
+        vowelno<--0
+        count<--0
+
+       INPUT("Input string: ",str1)
+       str1<-- LOWERCASE(str1)
+
+        vowelno <-- 0
+        For count <-- 1 To LENGTH(str1)
+            thischar <-- Mid(str1, count, 1)
+
+            If (thischar = "a" Or thischar = "e" Or thischar = "i" Or thischar = "o" Or thischar = "u") Then
+
+                vowelno <-- vowelno + 1
+
+
+            End If
+        Next
+        OUTPUT("Number of Vowels are: " , vowelno)
+        

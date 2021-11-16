@@ -1,0 +1,22 @@
+Assignment:1
+
+declare string1 : string
+declare truefalse : boolean
+declare thischar : char
+declare count : integer
+string1 <-- ""
+count<-- 0
+thischar<-- ""
+
+INPUT("INPUT: ",string1)
+for count <-- 1 to LENGTH(string1)
+      thischar<-- mid(string1,count,1)
+           IF (thischar >= 'a' AND thischar <= 'z') THEN
+              truefalse<--TRUE
+            Else
+               truefalse<--FALSE
+            END IF
+
+
+        Next
+        Output("Only Alphabets: " truefalse)

@@ -1,0 +1,25 @@
+Declare str,newstr : STRING
+Declare char1,thischar,newchar : CHARACTER
+Declare count : INTEGER
+
+str<-- ""
+newstr<--""
+thischar<--''
+newchar<--''
+count<--0
+
+INPUT("Enter string: ",str)
+INPUT("Enter old char: ",char1)
+INPUT("Enter new char: ",newchar)
+
+FOR count <--1 to LENGTH(str)
+         thischar<--MID(str,count,1)
+             IF thischar = char1 Then
+                  thischar = newchar
+             ENDIF
+         
+
+            Next
+         
+
+            OUTPUT("New String: ", newstr)

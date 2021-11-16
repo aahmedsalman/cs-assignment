@@ -1,0 +1,26 @@
+        Declare str1 : String
+        Declare firstcharacter : String
+        Declare char1 : String
+        Declare char2 : String
+        Declare nstr : String
+
+
+        char1 <-- ""
+        char2 <-- ""
+        str1 <-- ""
+        nstr <-- ""
+        firstcharacter <-- ""
+
+        INPUT ("Enter string: , str1)
+        firstcharacter <-- str1(0)
+        nstr <-- firstcharacter
+        For count <-- 1 To LENGTH(str1) - 1
+            If str1(count) <> firstcharacter Then
+                nstr <-- nstr , str1(count)
+            Else nstr <-- nstr , char1
+
+            End If
+        Next
+        OUTPUT ("Altered String: " , nstr)
+    
+

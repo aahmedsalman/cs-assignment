@@ -1,0 +1,43 @@
+Declare  str1, str2, str3, str4 : String
+Declare notposition, badposition, counter, counter2 : Integer
+            str1 <-- ""
+            notposition <-- 0
+            badposition <-- 0
+            counter <-- 0
+            counter2 <-- 0
+
+
+            INPUT("Input string: ", str1)
+            str1 <-- UPPERCASE(str1)
+             str4 = str1
+
+              
+
+
+            For counter <--  1 To Length(str1)
+                If Mid(str1, counter, 3) = "NOT" Then
+                    notposition <-- counter
+                ElseIf Mid(str1, counter, 3) = "BAD" Then
+                    badposition <-- counter
+                End If
+
+
+
+        Next
+        If notposition = 0 Then
+            OUTPUT(Lowercase(str4))
+            
+        End If
+        If badposition = 0 Then
+            Output(Lowercase(str4))
+            
+
+        End If
+        str2 = LCase(Mid(str1, 1, notposition - 1))
+        str3 = LCase(Mid(str1, badposition + 3))
+        str1 = LCase(str1)
+
+
+
+            If badposition > notposition Then
+            Console.WriteLine("Altered string: " & str2 & "good" & str3)

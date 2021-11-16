@@ -1,0 +1,58 @@
+Declare char1,thischar,char2, : CHARACTER
+Declare count,char1count,total,nocount,alphacount,specialcount,count2 : INTEGER
+Declare str1 : STRING
+
+
+char1<--''
+char2<--''
+thischar<--''
+count<--0
+count2<--0
+char1count<--0
+total<--0
+nocount<--0
+alphacount<--0
+specialcount<--0
+str1<--""
+
+
+
+INPUT("Enter string: ",str1)
+INPUT("Enter character: ",char1)
+  
+
+     FOR count2 <-- 1 To LENGTH(str1)
+              char2<--MID(str1,count2,1)
+                  IF char2=char1 Then
+                       char1count <-- char1count + 1
+
+                  ENDIF
+          
+            Next
+      
+        OUTPUT("Number of entered character is: " , char1count)
+
+        For count <-- 1 To Len(str1)
+            thischar <-- Mid(str1, count, 1)
+            If (thischar >= 'a' And thischar <= 'z') Then
+                alphacount <-- alphacount + 1
+
+            ElseIf (Asc(thischar) >= 48 And Asc(thischar) <= 57) Then
+
+                nocount <-- nocount + 1
+
+            Else : specialcount <-- specialcount + 1
+            End If
+            total <-- specialcount + alphacount + specialcount
+
+        Next
+        total <-- specialcount + alphacount + nocount
+
+        OUTPUT("Total Number of characters are: " , total)
+        
+       OUTPUT("Alpha Count: " , alphacount)
+
+        OUTPUT("Number Count:", nocount)
+      
+        OUTPUT("Special Character Count: " , specialcount)
+    
